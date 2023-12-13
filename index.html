@@ -9,18 +9,21 @@
                 const day = date.getDate()
                 if (month === 0 && day === 1) {
                     document.getElementById('answer').innerHTML = 'YES';
+                } else {
+                    document.getElementById('answer').innerHTML = 'NO';
                 }
             });
         </script>
         <style>
             #answer {
                 text-align: center;
+                padding: 50px;
                 font-size: 72px;
                 font-family: sans-serif;
             }
         </style>
     </head>
     <body>
-        <div id="answer">NO</div>
+        <div id="answer"></div>
     </body>
 </html>
